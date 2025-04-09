@@ -27,7 +27,7 @@ function convertToRoman(num) {
 }
 		
 	}
-console.log(ans)
+ return (ans)
 }
  
 
