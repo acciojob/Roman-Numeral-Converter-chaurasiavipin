@@ -8,7 +8,17 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+  let result = "";
 
+  for (const { value, symbol } of romanMap) {
+    while (num >= value) {
+      result += symbol;
+      num -= value;
+    }
+  }
+
+  console.log(result);
+}
   //your code here
 
 }
