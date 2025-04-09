@@ -1,5 +1,6 @@
 function convertToRoman(num) {
   	const obj = {
+		// 798  +'DCCXCVIII' 'DCXCLXLXVIII'
       0:['M',1000], 
 		1:['CM',900],
       2 :['D', 500], 
@@ -23,11 +24,12 @@ function convertToRoman(num) {
 			if( demo[1] <= num){
 				ans+=demo[0];
 				num=num-demo[1]
+				break;
 			}
 }
 		
 	}
- return (ans)
+ return ans
 }
  
 
